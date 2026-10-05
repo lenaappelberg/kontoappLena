@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         AccountRegister List= new AccountRegister();
         Scanner scanner= new Scanner(System.in);
-        int choice= scanner.nextInt();
-        while(choice!=5){
-            System.out.println("1. make account | 2. List all accounts | 3. deposit | 4. withdraw money | 5. end program");
+        int choice=0;
+        while(choice!=6){
+            System.out.println("1. make account | 2. List all accounts | 3. deposit | 4. withdraw money | 5. look up a specific account |6. end program");
             choice=scanner.nextInt();
             if (choice==1){
                 System.out.println("please type the owner of the new account");
@@ -31,6 +31,11 @@ public class Main {
                 int amount= scanner.nextInt();
                 currentaccount.withdraw(amount);
             } else if (choice==5) {
+                System.out.println("which account do you want to look up?");
+                String owner=scanner.next();
+                Account currentaccount=List.findaccount(owner);
+                System.out.println(currentaccount.getOwner() + currentaccount.getBalance());
+            } else if (choice==6) {
                 System.out.println("Goodbye");
             }
         }
