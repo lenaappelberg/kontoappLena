@@ -14,9 +14,13 @@ public class AccountRegister {
             System.out.println(Accountlist.get(i).getBalance());
         }
     }
-    public void findaccount(String inputowner){
+    public Account findaccount(String inputowner){
         for (int i = 0; i < Accountlist.size(); i++) {
-            if (Accountlist.get(i).getOwner().equals(inputowner))System.out.println(inputowner + "'s acount exists!");
+            if (Accountlist.get(i).getOwner().equalsIgnoreCase(inputowner)){
+                System.out.println(inputowner + "'s acount exists!");
+                return Accountlist.get(i);
+            }
         }
+        return null;
     }
 }

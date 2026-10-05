@@ -17,11 +17,19 @@ public class Main {
             } else if (choice==2) {
                 List.printall();
             } else if (choice==3) {
+                System.out.println("which account are you going to deposit money in?");
+                String owner=scanner.next();
+                Account currentaccount=List.findaccount(owner);
                 System.out.println("How much money do you want to deposit");
                 int amount= scanner.nextInt();
+                currentaccount.deposit(amount);
             } else if (choice==4) {
+                System.out.println("which account are you going to withdraw money from?");
+                String owner=scanner.next();
+                Account currentaccount=List.findaccount(owner);
                 System.out.println("how much money do you want to withdraw");
                 int amount= scanner.nextInt();
+                currentaccount.withdraw(amount);
             } else if (choice==5) {
                 System.out.println("Goodbye");
             }
