@@ -23,4 +23,4 @@ Jag behövde lägga till super till savingsaccount för att köra programmet.
 Scanner objekt måste skapas innan loopen men ska inte scanna innan loopen.
 Jag laddade upp .idea mappen till git och jag hittade kommandon på stack overflow efter jag sökte på google.
 ## Muntligt reflektion
-https://funet-my.sharepoint.com/:v:/g/personal/3kdyhapp26_sawble_folkuniversitetet_nu/IQDRAwXSHqXxR6JoGYAdUiN7AX2hQOTrgxECBArl8HS6FBA?e=i7OaNK&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+https://funet-my.sharepoint.com/:v:/g/personal/3kdyhapp26_sawble_folkuniversitetet_nu/IQDRAwXSHqXxR6JoGYAdUiN7AX2hQOTrgxECBArl8HS6FBA
